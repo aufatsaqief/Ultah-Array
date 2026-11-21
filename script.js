@@ -1,6 +1,6 @@
 // ====== GANTI BAGIAN INI ======
-var NAMA = "Nama Pacarmu";   // muncul di judul dan surat
-var DARI = "Namamu";         // tanda tangan di akhir surat
+var NAMA = "Array Kekasihku";   // muncul di judul dan surat
+var DARI = "Muhammad Aufa";         // tanda tangan di akhir surat
 // ==============================
  
 document.getElementById("name").textContent = NAMA;
