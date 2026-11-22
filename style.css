@@ -14,7 +14,7 @@ main{max-width:560px; margin:0 auto; padding:2.5rem 1.25rem 4rem}
 h1{font-family:"Gloock",Georgia,serif; font-weight:400; font-size:clamp(2.2rem,9vw,3.4rem); line-height:1.1; margin:0 0 .5rem}
 .sub{color:var(--muted); margin:0 0 1.5rem}
  
-svg{width:min(78vw,300px); height:auto; display:block; margin:0 auto 1.25rem; cursor:pointer}
+#cake{width:min(78vw,300px); height:auto; display:block; margin:0 auto 1.25rem; cursor:pointer}
 .flame{transform-origin:50% 100%; animation:flick .9s ease-in-out infinite alternate; transition:opacity .35s,transform .35s}
 .out .flame{opacity:0; transform:scale(.2); animation:none}
 .smoke{opacity:0}
@@ -91,11 +91,14 @@ canvas{z-index:2}
 .p4{right:var(--x); top:42%; --rot:-4deg}
 .p6{right:var(--x); top:71%; --rot:3deg}
  
-/* HP: foto kecil menempel di tepi layar, ikut bergulir bersama halaman pertama */
+/* HP: foto dipindah ke dalam surat dan menempel di tepi kiri-kanan surat */
 @media (max-width:899px){
-  #photos{position:absolute; inset:0 0 auto 0; height:100vh; height:100svh; --w:86px; --x:-8px}
+  main{padding-left:2rem; padding-right:2rem}
+  #letter{position:relative; padding-left:2.2rem; padding-right:2.2rem}
+  #photos{position:absolute; inset:0; overflow:visible; --w:62px; --x:-29px}
+  .p1{top:3%}  .p3{top:36%} .p5{top:68%}
+  .p2{top:16%} .p4{top:50%} .p6{top:80%}
   .glow{filter:blur(48px)}
-  .p1{top:34%} .p3{top:52%} .p5{top:70%} .p2{top:42%} .p4{top:60%} .p6{top:78%}
 }
  
 @media (prefers-reduced-motion:reduce){
@@ -158,4 +161,8 @@ canvas{z-index:2}
   .bgheart{display:none}
   .star{animation:none; opacity:.5}
 }
+ 
+/* ====== Panggung kue: foto di HP ditempatkan tepat di kiri-kanan kue ====== */
+.stage{position:relative}
+#cake{position:relative; z-index:1}
  

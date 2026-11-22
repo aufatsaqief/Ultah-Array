@@ -25,37 +25,38 @@
     <div class="glow g3"></div>
   </div>
  
-  <!-- Foto: simpan di folder foto/ dengan nama foto_1.jpeg sampai foto_7.jpeg -->
-  <div id="photos" aria-hidden="false">
-    <figure class="photo p1"><span class="frame"></span><img src="foto/foto_1.jpeg" alt="Foto kami 1"></figure>
-    <figure class="photo p2"><span class="frame"></span><img src="foto/foto_2.jpeg" alt="Foto kami 2"></figure>
-    <figure class="photo p3"><span class="frame"></span><img src="foto/foto_3.jpeg" alt="Foto kami 3"></figure>
-    <figure class="photo p4"><span class="frame"></span><img src="foto/foto_4.jpeg" alt="Foto kami 4"></figure>
-    <figure class="photo p5"><span class="frame"></span><img src="foto/foto_5.jpeg" alt="Foto kami 5"></figure>
-    <figure class="photo p6"><span class="frame"></span><img src="foto/foto_6.jpeg" alt="Foto kami 6"></figure>
-  </div>
- 
   <main>
     <!-- Judul: nama diganti lewat script.js -->
     <h1>Selamat ulang tahun, <span id="name"></span></h1>
     <p class="sub" id="hint">Tiup lilinnya dan buat permohonan dulu ya.</p>
  
-    <svg id="cake" viewBox="0 0 300 260" role="img" aria-label="Kue ulang tahun dengan tiga lilin" tabindex="0">
-      <ellipse cx="150" cy="240" rx="130" ry="12" fill="#000" opacity=".25"/>
-      <rect x="40" y="150" width="220" height="90" rx="14" fill="#ff9fb8"/>
-      <rect x="40" y="150" width="220" height="28" rx="14" fill="#fff6f0"/>
-      <path d="M40 170q18 22 36 0t36 0 36 0 36 0 36 0 36 0v-6H40z" fill="#fff6f0"/>
-      <g fill="#ffd27a"><circle cx="90" cy="205" r="6"/><circle cx="150" cy="212" r="6"/><circle cx="210" cy="205" r="6"/></g>
-      <rect x="95" y="105" width="12" height="48" rx="3" fill="#8fd3ff"/>
-      <rect x="144" y="95" width="12" height="58" rx="3" fill="#ffd27a"/>
-      <rect x="193" y="105" width="12" height="48" rx="3" fill="#b9f0b0"/>
-      <g class="flame"><path d="M101 70c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
-      <g class="flame" style="animation-delay:.2s"><path d="M150 60c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
-      <g class="flame" style="animation-delay:.4s"><path d="M199 70c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
-      <g class="smoke" stroke="#d9bfd6" stroke-width="3" fill="none" stroke-linecap="round">
-        <path d="M101 98q-6-10 0-20"/><path d="M150 88q-6-10 0-20"/><path d="M199 98q-6-10 0-20"/>
-      </g>
-    </svg>
+    <div class="stage">
+  <svg id="cake" viewBox="0 0 300 260" role="img" aria-label="Kue ulang tahun dengan tiga lilin" tabindex="0">
+        <ellipse cx="150" cy="240" rx="130" ry="12" fill="#000" opacity=".25"/>
+        <rect x="40" y="150" width="220" height="90" rx="14" fill="#ff9fb8"/>
+        <rect x="40" y="150" width="220" height="28" rx="14" fill="#fff6f0"/>
+        <path d="M40 170q18 22 36 0t36 0 36 0 36 0 36 0 36 0v-6H40z" fill="#fff6f0"/>
+        <g fill="#ffd27a"><circle cx="90" cy="205" r="6"/><circle cx="150" cy="212" r="6"/><circle cx="210" cy="205" r="6"/></g>
+        <rect x="95" y="105" width="12" height="48" rx="3" fill="#8fd3ff"/>
+        <rect x="144" y="95" width="12" height="58" rx="3" fill="#ffd27a"/>
+        <rect x="193" y="105" width="12" height="48" rx="3" fill="#b9f0b0"/>
+        <g class="flame"><path d="M101 70c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
+        <g class="flame" style="animation-delay:.2s"><path d="M150 60c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
+        <g class="flame" style="animation-delay:.4s"><path d="M199 70c8 10 8 20 0 28-8-8-8-18 0-28z" fill="#ffb347"/></g>
+        <g class="smoke" stroke="#d9bfd6" stroke-width="3" fill="none" stroke-linecap="round">
+          <path d="M101 98q-6-10 0-20"/><path d="M150 88q-6-10 0-20"/><path d="M199 98q-6-10 0-20"/>
+        </g>
+      </svg>
+    <!-- Foto: simpan di folder foto/ dengan nama foto_1.jpeg sampai foto_7.jpeg -->
+    <div id="photos" aria-hidden="false">
+      <figure class="photo p1"><span class="frame"></span><img src="foto/foto_1.jpeg" alt="Foto kami 1"></figure>
+      <figure class="photo p2"><span class="frame"></span><img src="foto/foto_2.jpeg" alt="Foto kami 2"></figure>
+      <figure class="photo p3"><span class="frame"></span><img src="foto/foto_3.jpeg" alt="Foto kami 3"></figure>
+      <figure class="photo p4"><span class="frame"></span><img src="foto/foto_4.jpeg" alt="Foto kami 4"></figure>
+      <figure class="photo p5"><span class="frame"></span><img src="foto/foto_5.jpeg" alt="Foto kami 5"></figure>
+      <figure class="photo p6"><span class="frame"></span><img src="foto/foto_6.jpeg" alt="Foto kami 6"></figure>
+    </div>
+    </div>
  
     <button id="blow" type="button">Tiup lilin</button>
  

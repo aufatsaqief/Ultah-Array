@@ -7,6 +7,18 @@ document.getElementById("name").textContent = NAMA;
 document.getElementById("name2").textContent = NAMA;
 document.getElementById("from").textContent = DARI;
  
+ 
+// Letak foto: di laptop berada di kiri-kanan halaman, di HP dipindah ke dalam surat
+var mq = matchMedia("(max-width:899px)");
+function mountPhotos(){
+  var ph = document.getElementById("photos");
+  var target = mq.matches ? document.getElementById("letter") : document.querySelector(".stage");
+  if (ph.parentNode !== target) target.appendChild(ph);
+}
+mountPhotos();
+if (mq.addEventListener) mq.addEventListener("change", mountPhotos);
+else if (mq.addListener) mq.addListener(mountPhotos);
+ 
 // Confetti
 var cv = document.getElementById("c"), ctx = cv.getContext("2d"), parts = [], running = false;
 function size(){ cv.width = innerWidth; cv.height = innerHeight; }
@@ -80,7 +92,7 @@ function blow(){
   var letter = document.getElementById("letter");
   letter.hidden = false;
   // beri waktu menikmati balon dan foto sebelum turun ke surat
-  setTimeout(function(){ letter.scrollIntoView({ behavior: "smooth", block: "start" }); }, 3500);
+  setTimeout(function(){ letter.scrollIntoView({ behavior: "smooth", block: "start" }); }, mq.matches ? 1500 : 3500);
 }
  
 document.getElementById("blow").addEventListener("click", blow);
