@@ -161,7 +161,7 @@ canvas{z-index:2}
   .bgheart{display:none}
   .star{animation:none; opacity:.5}
 }
- 
+
 /* ====== Panggung kue: foto di HP ditempatkan tepat di kiri-kanan kue ====== */
 .stage{position:relative}
 #cake{position:relative; z-index:1}

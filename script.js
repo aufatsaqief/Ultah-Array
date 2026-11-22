@@ -6,8 +6,7 @@ var DARI = "Muhammad Aufa";         // tanda tangan di akhir surat
 document.getElementById("name").textContent = NAMA;
 document.getElementById("name2").textContent = NAMA;
 document.getElementById("from").textContent = DARI;
- 
- 
+
 // Letak foto: di laptop berada di kiri-kanan halaman, di HP dipindah ke dalam surat
 var mq = matchMedia("(max-width:899px)");
 function mountPhotos(){
@@ -18,7 +17,7 @@ function mountPhotos(){
 mountPhotos();
 if (mq.addEventListener) mq.addEventListener("change", mountPhotos);
 else if (mq.addListener) mq.addListener(mountPhotos);
- 
+
 // Confetti
 var cv = document.getElementById("c"), ctx = cv.getContext("2d"), parts = [], running = false;
 function size(){ cv.width = innerWidth; cv.height = innerHeight; }
